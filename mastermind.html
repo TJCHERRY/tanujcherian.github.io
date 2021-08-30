@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tanuj Cherian</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* #main > .post {
+				background-color:rgba(53, 52, 52, 0.534);
+			}
+			.grid-container{
+				width: 100%;
+				display: grid;
+				grid-template-columns: auto auto;
+				row-gap: 5px;
+				column-gap: 5px;
+				background-color: #212931b9;
+				 padding: 5px;
+				margin-bottom: 1rem;
+			}
+			.item {
+				max-width:  100%;
+				max-height: 100%;
+				  background-color: rgba(255, 255, 255, 0.8);
+				  font-size: 30px;
+				  text-align: center;
+				background-size: cover;
+			}
+			#grid-Item {
+				  width:100%;
+				  height: auto;
+				margin-left:auto;
+				margin-right: auto;
+				display: block;
+			} */
+			.solo-image{
+				position: relative;
+				width: 100%    !important;
+				  height: auto   !important;
+				  background-color: #212931b9;
+				  border: 2px solid #212931ce;
+				 padding:3px;
+				  font-size: 30px;
+				  text-align: center;
+				margin-bottom:1rem;
+			}
+	
+			/* .article-section{
+				background-color: blue;
+				width:100%;
+				height:auto;
+			}
+			
+			.embed-container{
+				position: relative;
+				padding-bottom: 56.25%;
+				padding-top: 35px;
+				height: 0;
+				overflow: hidden;
+				background-color: #212931b9;
+				  border: 5px solid #212931ce;
+			}
+	
+			iframe{
+				position: absolute;
+				top:0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+	
+			.description{
+				margin: 0 0;
+			}
+			ul{
+				margin:0;
+			}
+	
+			footer>h3{
+				padding-top:10px ;
+			} */
+			
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">GO BACK</a>
+					</header>
+
+				<!-- Nav -->
+					<!-- <nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">This is Massively</a></li>
+							<li class="active"><a href="generic.html">Generic Page</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav> -->
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Mastermind</h1>
+									<p>Puzzle,Logic</p>
+								</header>
+								<video id="video" class="solo-image" controls="autoplay" muted loop="true"><source src="videos/mastermind.mp4" type="video/mp4"></video>
+								<ul>
+									<li style="font-weight: bold; margin-top:1rem;">Technology: Unity</li>
+									<li style="font-weight: bold;">Platform: Windows</li>
+								</ul>
+								<p>This is a student project which is a replica of the popular puzzle board game <a href="https://en.wikipedia.org/wiki/Mastermind_(board_game)">MasterMind</a></p>
+								<h3>Instructions</h3>
+								<p>The physical game requires 2 players:
+									<ul>
+										<li>The hider who hides a combination of 6 colours of any permutation.</li>
+										<li>The seeker who is required to guess this permutation of colours within a finite amount of attempts(No. of attempts may vary but standard is 10).</li>
+										The hider’s role does not tend there.
+										<li>The hider is supposed provide clues after every attempt made by the seeker.</li>
+										<li>The hider is meant to analyze the clues and make changes during
+										his/her next try in order to bring him/her closer to the hidden
+										combination. </li>
+										<li>Failure to seek the correct combination within the given number of
+										attempts results in the seeker’s loss and the hider’s win.</li>
+										<li>Successfully figuring out the combination within the given number of
+										chances results in the seeker’s win and the hider’s loss.</li>
+									</ul>
+								</p>
+								
+								<h3>Core Gameplay Loop</h3>
+								<p>	
+									<ul>
+									<li>In this version of the game, the player is the seeker by default and has to
+									figure out the hidden colour combination.</li>
+									<li>The A.I in the game is placed as the hider by default and sets the hidden
+									combination while giving visual clues to the player by analyzing the
+									combination set by the player/seeker. </li>
+									<li>The A.I. uses a simple search algorithm that goes through the colour
+									combinationatin set by the player.</li>
+									<li>After comparing the player’s combination with its own(The hidden
+									one), the A.I. then provides visual clues in the form of red and white
+									pins(identical to board game).</li>
+									<li>The red pin placed at a particular colour’s position denotes that the
+									colour and the position match the one from hidden combination.</li>
+									<li>The white pin signifies that the colour exists in the hidden
+									combination but at the wrong position.</li>
+									</ul>
+								</p>
+
+
+									<!-- <p>In this game both the players play different roles.
+									One of the players is responsible to set the colour combination and
+									the other is responsible to guess the set combination.
+									There exists 5 different colours thus enabling the hider to set the
+									colours in any order.
+									It is the job of the seeker to figure out the combination set by the
+									hider within a limited number of chances.
+									The hider’s role does not tend there.
+									The hider is supposed provide clues after every try made by the
+									seeker.
+									The hider is meant to analyze the clues and make changes during
+									his/her next try in order to bring him/her closer to the hidden
+									combination
+									Failure to seek the correct combination within the given number of
+									chances results in the seeker’s loss and the hider’s win.
+									Successfully figuring out the combination within the given number of
+									chances results in the seeker’s win and the hider’s loss.
+									Player’s Role
+									In this version of the game, the player is the seeker by default and has to
+									figure out the hidden colour combination.
+									A.I. Role
+									The A.I in the game is placed as the hider by default and sets the hidden
+									combination while giving visual clues to the player by analyzing the
+									combination set by the player/seeker.
+									A.I. Functionality
+									The A.I. uses a simple search algorithm that goes through the colour
+									combinationatin set by the player.
+									After comparing the player’s combination with its own(The hidden
+									one), the A.I. then provides visual clues in the form of red and white
+									pins(identical to board game).
+									The red pin placed at a particular colour’s position denotes that the
+									colour and the position match the one from hidden combination.
+									The white pin signifies that the colour exists in the hidden
+									combination but at the wrong position.
+								</p> -->
+								
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						<section>
+							<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
