@@ -13,7 +13,8 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			 #main > .post {
-				background-color:rgba(53, 52, 52, 0.534);
+
+			background-color: rgb(219, 219, 219);
 			}
 			.grid-container{
 				width: 100%;
@@ -51,6 +52,26 @@
 				text-align: center;
 				margin-bottom:1rem;
 			}
+
+
+		.embed-container
+		{
+			position: relative;
+    		padding-bottom: 56.25%;
+    		padding-top: 35px;
+    		height: 0;
+    		overflow: hidden;
+			background-color: #212931b9;
+  			border: 5px solid #212931ce;
+		}
+
+		iframe{
+			position: absolute;
+    		top:0;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
+		}
 	
 			/* .article-section{
 				background-color: blue;
@@ -123,7 +144,8 @@
 									<h1>Faction Fall</h1>
 									<p>Student Project</p>
 								</header>
-								<video id="video" class="solo-image" controls="autoplay" muted loop="true"><source src="videos/Factionfall.mp4" type="video/mp4"></video>
+								<!-- <video id="video" class="solo-image" controls="autoplay" muted loop="true"><source src="videos/Factionfall.mp4" type="video/mp4"></video> -->
+								<div class="embed-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/QNnDQHcKMXU?list=PLWi1B4wCHOFqxzNgvsT9lC1yNKH7BB29H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 								<ul>
 									<li style="font-weight: bold; margin-top:1rem;">Technology: Unity</li>
 									<li style="font-weight: bold;">Platform: Windows</li>
@@ -138,8 +160,8 @@
 									<div class="item"><img src="images/Demo.png" id=grid-Item alt="item4"></div>
 								</div>
 								<p style="text-align: center; line-height: 0.5rem; font-weight: bold; margin-bottom: 4rem;">Game Asset Screenshots</p>
-								<video id="video" class="solo-image" controls="autoplay" muted loop="true" style="margin-bottom: 0.5rem;"><source src="videos/FF2.mp4" type="video/mp4"></video>
-								<p style="text-align: center; line-height: 0.5rem; font-weight: bold;">Free Roaming the Environment</p>
+								<div class="embed-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/jvVhzkH1B2M?list=PLWi1B4wCHOFqxzNgvsT9lC1yNKH7BB29H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+								<p style="text-align: center; line-height: 2rem; font-weight: bold;">Free Roaming the Environment</p>
 
 							</section>
 

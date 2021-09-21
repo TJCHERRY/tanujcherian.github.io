@@ -1,5 +1,5 @@
 #main{
-    background-color: rgb(219, 219, 219);
+    background-color: white;
 }
 
 #body-wrapper{
@@ -17,7 +17,7 @@
 #body-wrapper> :last-child{
     width: 100%;
     flex-basis: 50px;
-    background-color:rgb(167, 167, 167) ;
+    background-color: rgb(219, 219, 219);
     text-align: center;
     padding-top:1rem;
     padding-bottom:1rem;
@@ -32,27 +32,29 @@ p{
     display:flex;
     flex-basis:auto;
     flex-flow: row wrap;
-    background-color: rgb(167, 167, 167);
+    background-color: rgb(219, 219, 219);
     min-width: 100%;
     margin-bottom: 0.2rem;
     /* margin:5px; */
 }
 .blog-item>*{
-    border: solid 2px rgb(117, 117, 117) ;
+    background-color: rgb(219, 219, 219);
     
 }
 
 .blog-item>:nth-child(1){
 
-    flex: 1 1 30%;
+    flex-basis: 400px;
+    flex-grow: 1; 
 
 }
 .blog-item>:nth-child(2){
-    flex: 1 1 70%;
-    padding:0 1rem;
+     flex-basis:300px;
+     flex-grow: 1;
+    padding:0 1rem; 
 
 }
 .blog-item>div>img{
     display:block;
-    width: 100%;        /* Make it occupy 100% of the size of the <div> */
+    width: 100%;       /* Make it occupy 100% of the size of the <div> */
 }
