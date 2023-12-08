@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Generic Page - Massively by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<style>
+		#main {
+			background-color: rgb(219, 219, 219);
+		}
+		.grid-container{
+			width: 100%;
+			display: grid;
+			grid-template-columns: auto auto;
+			row-gap: 5px;
+			column-gap: 5px;
+			background-color: #212931b9;
+ 			padding: 5px;
+			margin-bottom: 1rem;
+		}
+		.item {
+			max-width:  100%;
+			max-height: 100%;
+  			background-color: rgba(0, 0, 0, 1.0);
+  			font-size: 30px;
+  			text-align: center;
+			object-fit: contain;
+		}
+		#grid-Item {
+  			width:100%;
+  			height: auto;
+			margin-left:auto;
+			margin-right: auto;
+			display: block;
+		}
+		.solo-image{
+			position: relative;
+			width: 100%    !important;
+  			height: auto   !important;
+  			background-color: #212931b9;
+  			border: 2px solid #212931ce;
+ 			padding:3px;
+  			font-size: 30px;
+  			text-align: center;
+			margin-bottom:1rem;
+		}
+
+		.article-section{
+			background-color: blue;
+			width:100%;
+			height:auto;
+		}
+		
+		.embed-container{
+			position: relative;
+    		padding-bottom: 56.25%;
+    		padding-top: 35px;
+    		height: 0;
+    		overflow: hidden;
+			background-color: #212931b9;
+  			border: 5px solid #212931ce;
+		}
+
+		iframe{
+			position: absolute;
+    		top:0;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
+		}
+
+		.description{
+			margin: 0 0;
+			font-size: 15px;
+			text-align: center;
+		}
+		ul{
+			margin:0;
+		}
+
+		footer>h3{
+			padding-top:10px ;
+		}
+		
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Game Titles</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">Game Dev</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://discord.com/invite/DSW42V6BRn" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+				<li><a href="https://www.instagram.com/aum_thegame/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://www.youtube.com/channel/UCmxYjUBRH-iGn4LokGYkPTQ" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>AUM:THE GAME</h1>
+
+				</header>
+				<div class="image main"><img src="images\AUM_Board_2023.webp"  alt="" /></div>
+				<div><a href="https://www.aumthegame.com/"><span class="label">Try The Game Here</span></a> </div>
+				<p>AUM - The Game is a Free to Play , Real Time Multi-Player Battle Arena Game inspired by Indian Mythological Lore and the Wisdom contained in ancient scriptures as the Core philosophy for story telling while  simultaneously creating a game that integrates many elements of our culture that have not been explored enough into an engaging experience for the Gamer.</p>
+				<p> <a href="https://www.brahmanstudios.com/">Developed by Brahman Studios</a>. I joined the team back in Ocober 2021
+					as the sole gameplay programmer to help develop their existing prototype all the way into its Open Beta. This resulted in the development of many gameplay
+					systems, mechanics that had to be synced with our custom architected back-end, and writing the user experience, carefully crafted by our design team, building BOTS, and executing all this with optimization for mobile as our prime focus.</p>
+				<p>The primary dev environment also known as a game engine used here is the widely popular <a
+						href="https://unity.com/">Unity3D</a>. Its runtime environment is .NET and C# is primarily used
+					to communicate with the engine's core components via Unity's proprietery API. </p>
+
+				<header>
+					<h2>Gameplay Mechanics</h2>
+				</header>
+
+				<div class="embed-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/EVsARUBLeA8" title="AUM - TheGame | Pre-Release Teaser | Gameplay  Reveal | India&#39;s First Multiplayer Battle Arena Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+				<p><ul>
+					<li>Since our backend didn't support the in-engine physics system, we relied on the character controller component for player movement and used a player prediction system to mitigate network lag.</li>
+					<li>The game has 5 different weapon yielding Fighters. Each player has the ability to choose out of 5 types of elementals and out of 3 God types before entering Battle, doing so will changing each fighter's play style and stats in-game. Thus, Building Systems to scale and modify was the goal from the get go.</li>
+					<li> Each of the player controllers were controlled by state machines that buffered player input and blocked certain input through enum based Input flagging assigned to each and every state, This helped us accomodate <b>n</b> number of player states while managing them with ease.</li>
+					<li>Emphasis on vector math was a non-negotiable.</li>
+				</ul></p>
+
+				<div class="grid-container">
+					<div class="item"><img src="images\AUM_dump_01.jpeg" id=grid-Item alt="item1"></div>
+					<div class="item"><img src="images\AUM_dump_02.jpeg" id=grid-Item alt="item2"></div>
+					<div class="item"><img src="images\AUM_dump_03.jpeg" id=grid-Item alt="item3"></div>
+					<div class="item"><img src="images\AUM_dump_04.jpeg" id=grid-Item alt="item4"></div>
+				</div>
+				<p>The above images are screenshots of the game in development and does not represent the final look.</p>
+
+				<header><h2>Combat</h2></header>
+				<div class="solo-image"><img src="gifs\NarayanAstra_Test.gif" id="grid-Item"></div>
+				<div class="solo-image"><img src="gifs\NarayanAstra_Final.gif" id="grid-Item"></div>
+				<p>The clips you see above are iterations of the god given ultimate ability Known as an ASTRA. It involvs a portal to open in the center of the map and have weapons hail down on all moving players. It was quite a challenge to track each individual weapon on the client and server. But, extending our existing entity system did the trick.
+					Overall, a lot of fun to implement with a decent payoff. Shoutout to our tech lead Dheeraj for helping me out!
+				</p>
+
+				<br>
+				
+				<header><h2>Bots</h2></header>
+				<div class="solo-image"><img src="gifs\Bot_Follow_Test.gif" id="grid-Item"></div>
+				<!-- <video class="solo-image" controls="controls autoplay"  loop="true"><source src="Videos\Lighting_test.mp4" type="video/mp4"></video> -->
+				<p style="margin-top: 0.5rem;">In Early June of 2023, I was tasked with creating bots, so our existing player base had a backup of players available incase they fell-short. We used a straight forward approach of having an overlay bot controller that were constantly searching for matches being made and would join if matches we're available.
+					These bots were end to end functional and also were made to follow the rules of the game. So each bot was nothing but a headless unity windows instance running on our servers, or any availble pc (while testing). I decided to create a custom yet very simple behavior tree, that was tasked to follow targets, attack, defend and also cast ultimate abilites at opportune moments.
+				</p>
+
+				<header><h2>User Interface/User Experience</h2></header>
+				<div class="grid-container">
+					<div class="item"><img src="gifs\BhaktiUX.gif" id=grid-Item alt="item1"></div>
+					<div class="item"><img src="gifs\AvatarSwitch.gif" id=grid-Item alt="item2"></div>
+					<div class="item"><img src="gifs\GnanaUX.gif" id=grid-Item alt="item3"></div>
+					<div class="item"><img src="gifs\Customization.gif" id=grid-Item alt="item3"></div>
+				</div>
+				<p class="description">These are clips from from our latest iteration of the UX Design</p>
+				<ul>
+					<li>The Vision and Intetion of our Designers and Creative Heads was to create an entire universe of our own with tasks, duties also known as sadhanas and meditations that the player has to perform apart from battling in the arena.</li>
+					<li>And so, we lay a heavy emphasis on giving the playera dynamic and interactive experince in the non gameplay sections of our game by giving them a satisfying user experience.</li>
+					<li>The User experience has been through several iterations since we first started working on it, refining and pushing the bar every single iteration.</li>
+					<li>According the the our latest conceptual design, I built a screen system that was handled by a controller, accomodated different types of transitions with varying complexities, and have every parameter configurable.</li>
+					<li>This was one of the most challenging systems I have worked on and the results were pretty satisfactory.</li>
+				</ul>
+				<br>
+				<header><h2>MY EXPERIENCE</h2></header>
+				<p>The two years I spent on this project was nothing short of a challenge every step of the way.</p>
+				<ul>
+					<li>We were a team of 5 for the most part and were limited on budgets and thus resources. So finding creative and logical solutions was a daily affair.</li>
+					<li>Being resourceful and learning how to churn the best output out of what we have available was a practice we got really skilled at.</li>
+					<li>Managing the frontend of a MOBA, that in most other MOBA's would take a much larger team was a highly rewarding experince as it pushed me to the deep-end from the get go. </li>
+					<li>Gave me the confidence to scale and manage a larger code-base.</li>
+					<li>All this was possible due to the fact that I was part of an incredibly Resilient team at Brahman, that was known to punch through obstacles.</li>
+				</ul>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+
+
+			<h3>For Updates visit</h3>
+			<ul class="icons alt">
+				<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+			</ul>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Untitled</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
